@@ -21,6 +21,7 @@ class RocketLaunch:
 
         self.cloud_group = pygame.sprite.Group()
         self.create_clouds()
+        self.rocket = rocket.Rocket(self)
 
     def on_event(self):
         for event in pygame.event.get():
@@ -38,6 +39,7 @@ class RocketLaunch:
     def on_render(self):
         self.screen.fill(self.bg_color)
         self.cloud_group.draw(self.screen)
+        self.rocket.draw_rocket()
         pygame.display.flip()
 
     def on_cleanup(self):
