@@ -11,6 +11,7 @@ class Rocket:
         self.image = pygame.image.load('images/crew_dragon_v2.png')
         self.rect = self.image.get_rect()
         self.rect.midbottom = self.screen_rect.midbottom
+        # calibrate where it needs to go
         self.rect.y += 10
         self.rect.x -= 15
         self.y = float(self.rect.y)
