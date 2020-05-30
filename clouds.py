@@ -22,7 +22,7 @@ class Clouds(sprite.Sprite):
         self.rect = self.image.get_rect()
 
         self.x = random.randint(1, self.settings.WIDTH - self.rect.width)
-        self.y = random.randint(-3000, -500)
+        self.y = random.randint(-1500, -500)
 
         self.rect.x = self.x
         self.rect.y = self.y
